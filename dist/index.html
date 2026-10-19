@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A standalone browsing and navigation model for VoltMize energy operations data.">
+  <title>VoltMize Atlas — Energy Knowledge Browser</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M18.2 2 7 17h7l-1 13 12-16h-7l.2-12Z"/></svg>
+        </div>
+        <div><strong>VoltMize</strong><span>ATLAS</span></div>
+      </div>
+
+      <p class="eyebrow">Browsing model</p>
+      <nav class="mode-nav" aria-label="Browsing modes">
+        <button class="mode-button is-active" data-view="guided">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6v5H4zM14 14h6v5h-6zM14 3h6v5h-6zM7 10v6h7M17 8v6"/></svg>
+          <span><strong>Guided</strong><small>Follow the hierarchy</small></span>
+        </button>
+        <button class="mode-button" data-view="flat">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14M5 12h14M5 19h14"/></svg>
+          <span><strong>Flat index</strong><small>Scan every document</small></span>
+        </button>
+        <button class="mode-button" data-view="connections">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.5 11 7-4M8.5 13l7 4"/></svg>
+          <span><strong>Connections</strong><small>Explore related evidence</small></span>
+        </button>
+      </nav>
+
+      <div class="sidebar-section-head">
+        <span>Collection tree</span>
+        <button class="icon-button small" id="collapse-tree" title="Collapse all" aria-label="Collapse category tree">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+        </button>
+      </div>
+      <nav class="tree" id="category-tree" aria-label="Category hierarchy"></nav>
+
+      <div class="dataset-card">
+        <span class="live-dot"></span>
+        <div><strong id="dataset-count">Dataset ready</strong><small>Standalone teaching collection</small></div>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="search-box" role="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <input id="search-input" type="search" placeholder="Search incidents, meters, zones or tags…" autocomplete="off" aria-label="Search the document collection">
+          <kbd>/</kbd>
+        </div>
+        <button class="top-action" id="recent-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2M4.9 5A9 9 0 1 1 3 12"/><path d="M3 4v5h5"/></svg>
+          <span>Recent</span><b id="recent-count">0</b>
+        </button>
+        <div class="avatar" title="Energy analyst">EA</div>
+      </header>
+
+      <main id="main-content">
+        <div class="navigation-bar">
+          <div class="history-buttons" aria-label="Document navigation history">
+            <button class="icon-button" id="history-back" disabled aria-label="Previous viewed document">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+            </button>
+            <button class="icon-button" id="history-forward" disabled aria-label="Next viewed document">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+          <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb"></nav>
+        </div>
+
+        <section class="hero" id="home-hero">
+          <div class="hero-copy">
+            <span class="overline">Operational knowledge, connected</span>
+            <h1>Trace an energy signal<br>from site to action.</h1>
+            <p>Browse five realistic factories through zones, meters, anomaly incidents and diagnostic playbooks—without needing an exact query.</p>
+            <div class="hero-actions">
+              <button class="primary-button" data-open-category="factory-textile_reference">Start with weaving unit</button>
+              <button class="text-button" data-view-jump="connections">Explore connections <span>→</span></button>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Example browsing path">
+            <div class="path-label">A guided path</div>
+            <div class="path-node"><span>01</span><div><small>FACTORY</small><strong>Weaving unit</strong></div></div>
+            <div class="path-line"></div>
+            <div class="path-node"><span>02</span><div><small>ZONE</small><strong>Compressor room</strong></div></div>
+            <div class="path-line"></div>
+            <div class="path-node accent"><span>03</span><div><small>EVIDENCE</small><strong>Leak growth incident</strong></div></div>
+          </div>
+        </section>
+
+        <section class="workspace">
+          <div class="workspace-main">
+            <div id="factory-shelf" class="factory-shelf"></div>
+
+            <div class="collection-heading">
+              <div>
+                <span class="overline" id="view-kicker">Browse collection</span>
+                <h2 id="collection-title">Priority evidence</h2>
+                <p id="collection-description">Recent incidents and useful entry points across the collection.</p>
+              </div>
+              <span class="result-count" id="result-count"></span>
+            </div>
+
+            <div class="filters" id="filters">
+              <label>Type<select id="type-filter"><option value="all">All document types</option></select></label>
+              <label>Severity<select id="severity-filter"><option value="all">All severities</option><option value="critical">Critical</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option><option value="info">Information</option></select></label>
+              <button class="clear-button" id="clear-filters">Clear filters</button>
+            </div>
+
+            <div id="content-area" aria-live="polite"></div>
+          </div>
+
+          <aside class="context-rail" id="context-rail">
+            <section class="rail-card">
+              <div class="rail-title"><span>Current route</span><b>LIVE</b></div>
+              <div class="route-map" id="route-map"></div>
+            </section>
+            <section class="rail-card" id="recent-panel">
+              <div class="rail-title"><span>Recently viewed</span><button id="clear-recent">Clear</button></div>
+              <div id="recent-list" class="mini-list"></div>
+            </section>
+            <section class="rail-card model-note">
+              <span class="note-icon">i</span>
+              <div><strong>Why browsing?</strong><p>Users can discover evidence by context even when they do not know the incident name or meter ID.</p></div>
+            </section>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog class="document-dialog" id="document-dialog">
+    <div id="document-preview"></div>
+  </dialog>
+  <div class="sidebar-scrim" id="sidebar-scrim"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/models/flat-model.js"></script>
+  <script src="assets/models/guided-model.js"></script>
+  <script src="assets/models/hypertext-model.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

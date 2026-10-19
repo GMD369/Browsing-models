@@ -1,0 +1,27 @@
+﻿id,parent_id,name,kind,description,sort_order
+root,,All factories,collection,VoltMize operational knowledge collection,0
+factory-textile_reference,root,Reference Weaving Unit,factory,Textile weaving · Lahore,1
+zone-textile_reference-z_prod,factory-textile_reference,Production hall,zone,Production-linked load with separate Line 1 and Line 2 behavior.,1
+zone-textile_reference-z_air,factory-textile_reference,Compressor room,zone,Fixed- and variable-speed compressors supply the shared compressed-air system.,2
+zone-textile_reference-z_hum,factory-textile_reference,Humidification,zone,Fans and pumps maintain fabric-process humidity during both shifts.,3
+zone-textile_reference-z_prep,factory-textile_reference,Preparatory,zone,Warping and sizing are batch loads concentrated in the day shift.,4
+zone-textile_reference-z_util,factory-textile_reference,Utilities,zone,"Lighting, pumps, ventilation, sockets and standby services.",5
+factory-cold_storage,root,Indus Cold Chain,factory,Cold storage · Karachi,2
+zone-cold_storage-z_plant,factory-cold_storage,Refrigeration plant,zone,Screw and reciprocating compressors supply cooling around the clock.,1
+zone-cold_storage-z_chamb,factory-cold_storage,Cold chambers,zone,"Freezer, chiller, evaporator-fan and defrost loads form the thermal demand.",2
+zone-cold_storage-z_dock,factory-cold_storage,Loading dock,zone,"Doors, air curtains and forklift charging vary with dispatch activity.",3
+zone-cold_storage-z_util,factory-cold_storage,Utilities,zone,"Yard lighting, offices, security and monitoring systems.",4
+factory-plastics_moulding,root,Ravi Polymers (Pvt) Ltd,factory,Plastics moulding · Lahore,3
+zone-plastics_moulding-z_mould,factory-plastics_moulding,Moulding hall,zone,"Heaters, hydraulic drives and mould cycles dominate demand.",1
+zone-plastics_moulding-z_aux,factory-plastics_moulding,Auxiliaries,zone,"Chillers, cooling pumps, dryers and material handling support production.",2
+zone-plastics_moulding-z_util,factory-plastics_moulding,Utilities,zone,"Lighting, office cooling, workshop loads and standby services.",3
+factory-metal_workshop,root,Al-Hadeed Engineering Works,factory,Metal fabrication · Gujranwala,4
+zone-metal_workshop-z_shop,factory-metal_workshop,Machine shop,zone,"Lathes, mills, drills and grinders create short high-load operations.",1
+zone-metal_workshop-z_fab,factory-metal_workshop,Fabrication bay,zone,"Welders, cutting tools and extraction fans produce irregular peaks.",2
+zone-metal_workshop-z_util,factory-metal_workshop,Utilities,zone,"Lighting, ventilation, office and standby loads.",3
+factory-bakery_food,root,Shaheen Bakers,factory,Commercial bakery · Faisalabad,5
+zone-bakery_food-z_bake,factory-bakery_food,Bakery hall,zone,Ovens and proofers form the largest scheduled production load.,1
+zone-bakery_food-z_dough,factory-bakery_food,Dough preparation,zone,Mixers and dividers run in short batches before baking.,2
+zone-bakery_food-z_cold,factory-bakery_food,Cold store,zone,Refrigeration protects ingredients and finished products.,3
+zone-bakery_food-z_pack,factory-bakery_food,Packing,zone,"Conveyors, sealers and packing equipment follow oven output.",4
+zone-bakery_food-z_util,factory-bakery_food,Utilities,zone,"Lighting, water pumping, office and hygiene equipment.",5

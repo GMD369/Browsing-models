@@ -1,0 +1,167 @@
+﻿source_document_id,target_document_id,relationship,explanation,weight
+overview-textile_reference,zone-textile_reference-z_prod,contains,Production hall belongs to this factory,1.0
+zone-textile_reference-z_prod,overview-textile_reference,part of,Return to the factory-wide context,0.95
+zone-textile_reference-z_prod,meter-textile_reference-z_prod-mt2,measured by,MT2 provides this zone's evidence,1.0
+meter-textile_reference-z_prod-mt2,zone-textile_reference-z_prod,observes,Open the operating context for this measurement point,1.0
+overview-textile_reference,zone-textile_reference-z_air,contains,Compressor room belongs to this factory,1.0
+zone-textile_reference-z_air,overview-textile_reference,part of,Return to the factory-wide context,0.95
+zone-textile_reference-z_air,meter-textile_reference-z_air-mt3,measured by,MT3 provides this zone's evidence,1.0
+meter-textile_reference-z_air-mt3,zone-textile_reference-z_air,observes,Open the operating context for this measurement point,1.0
+overview-textile_reference,zone-textile_reference-z_hum,contains,Humidification belongs to this factory,1.0
+zone-textile_reference-z_hum,overview-textile_reference,part of,Return to the factory-wide context,0.95
+zone-textile_reference-z_hum,meter-textile_reference-z_hum-mt4,measured by,MT4 provides this zone's evidence,1.0
+meter-textile_reference-z_hum-mt4,zone-textile_reference-z_hum,observes,Open the operating context for this measurement point,1.0
+overview-textile_reference,zone-textile_reference-z_prep,contains,Preparatory belongs to this factory,1.0
+zone-textile_reference-z_prep,overview-textile_reference,part of,Return to the factory-wide context,0.95
+zone-textile_reference-z_prep,meter-textile_reference-z_prep-mt5,measured by,MT5 provides this zone's evidence,1.0
+meter-textile_reference-z_prep-mt5,zone-textile_reference-z_prep,observes,Open the operating context for this measurement point,1.0
+overview-textile_reference,zone-textile_reference-z_util,contains,Utilities belongs to this factory,1.0
+zone-textile_reference-z_util,overview-textile_reference,part of,Return to the factory-wide context,0.95
+zone-textile_reference-z_util,meter-textile_reference-z_util-mt6,measured by,MT6 provides this zone's evidence,1.0
+meter-textile_reference-z_util-mt6,zone-textile_reference-z_util,observes,Open the operating context for this measurement point,1.0
+overview-cold_storage,zone-cold_storage-z_plant,contains,Refrigeration plant belongs to this factory,1.0
+zone-cold_storage-z_plant,overview-cold_storage,part of,Return to the factory-wide context,0.95
+zone-cold_storage-z_plant,meter-cold_storage-z_plant-mt2,measured by,MT2 provides this zone's evidence,1.0
+meter-cold_storage-z_plant-mt2,zone-cold_storage-z_plant,observes,Open the operating context for this measurement point,1.0
+overview-cold_storage,zone-cold_storage-z_chamb,contains,Cold chambers belongs to this factory,1.0
+zone-cold_storage-z_chamb,overview-cold_storage,part of,Return to the factory-wide context,0.95
+zone-cold_storage-z_chamb,meter-cold_storage-z_chamb-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-cold_storage-z_chamb-mt1,zone-cold_storage-z_chamb,observes,Open the operating context for this measurement point,1.0
+overview-cold_storage,zone-cold_storage-z_dock,contains,Loading dock belongs to this factory,1.0
+zone-cold_storage-z_dock,overview-cold_storage,part of,Return to the factory-wide context,0.95
+zone-cold_storage-z_dock,meter-cold_storage-z_dock-mt5,measured by,MT5 provides this zone's evidence,1.0
+meter-cold_storage-z_dock-mt5,zone-cold_storage-z_dock,observes,Open the operating context for this measurement point,1.0
+overview-cold_storage,zone-cold_storage-z_util,contains,Utilities belongs to this factory,1.0
+zone-cold_storage-z_util,overview-cold_storage,part of,Return to the factory-wide context,0.95
+zone-cold_storage-z_util,meter-cold_storage-z_util-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-cold_storage-z_util-mt1,zone-cold_storage-z_util,observes,Open the operating context for this measurement point,1.0
+overview-plastics_moulding,zone-plastics_moulding-z_mould,contains,Moulding hall belongs to this factory,1.0
+zone-plastics_moulding-z_mould,overview-plastics_moulding,part of,Return to the factory-wide context,0.95
+zone-plastics_moulding-z_mould,meter-plastics_moulding-z_mould-mt2,measured by,MT2 provides this zone's evidence,1.0
+meter-plastics_moulding-z_mould-mt2,zone-plastics_moulding-z_mould,observes,Open the operating context for this measurement point,1.0
+overview-plastics_moulding,zone-plastics_moulding-z_aux,contains,Auxiliaries belongs to this factory,1.0
+zone-plastics_moulding-z_aux,overview-plastics_moulding,part of,Return to the factory-wide context,0.95
+zone-plastics_moulding-z_aux,meter-plastics_moulding-z_aux-mt3,measured by,MT3 provides this zone's evidence,1.0
+meter-plastics_moulding-z_aux-mt3,zone-plastics_moulding-z_aux,observes,Open the operating context for this measurement point,1.0
+overview-plastics_moulding,zone-plastics_moulding-z_util,contains,Utilities belongs to this factory,1.0
+zone-plastics_moulding-z_util,overview-plastics_moulding,part of,Return to the factory-wide context,0.95
+zone-plastics_moulding-z_util,meter-plastics_moulding-z_util-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-plastics_moulding-z_util-mt1,zone-plastics_moulding-z_util,observes,Open the operating context for this measurement point,1.0
+overview-metal_workshop,zone-metal_workshop-z_shop,contains,Machine shop belongs to this factory,1.0
+zone-metal_workshop-z_shop,overview-metal_workshop,part of,Return to the factory-wide context,0.95
+zone-metal_workshop-z_shop,meter-metal_workshop-z_shop-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-metal_workshop-z_shop-mt1,zone-metal_workshop-z_shop,observes,Open the operating context for this measurement point,1.0
+overview-metal_workshop,zone-metal_workshop-z_fab,contains,Fabrication bay belongs to this factory,1.0
+zone-metal_workshop-z_fab,overview-metal_workshop,part of,Return to the factory-wide context,0.95
+zone-metal_workshop-z_fab,meter-metal_workshop-z_fab-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-metal_workshop-z_fab-mt1,zone-metal_workshop-z_fab,observes,Open the operating context for this measurement point,1.0
+overview-metal_workshop,zone-metal_workshop-z_util,contains,Utilities belongs to this factory,1.0
+zone-metal_workshop-z_util,overview-metal_workshop,part of,Return to the factory-wide context,0.95
+zone-metal_workshop-z_util,meter-metal_workshop-z_util-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-metal_workshop-z_util-mt1,zone-metal_workshop-z_util,observes,Open the operating context for this measurement point,1.0
+overview-bakery_food,zone-bakery_food-z_bake,contains,Bakery hall belongs to this factory,1.0
+zone-bakery_food-z_bake,overview-bakery_food,part of,Return to the factory-wide context,0.95
+zone-bakery_food-z_bake,meter-bakery_food-z_bake-mt2,measured by,MT2 provides this zone's evidence,1.0
+meter-bakery_food-z_bake-mt2,zone-bakery_food-z_bake,observes,Open the operating context for this measurement point,1.0
+overview-bakery_food,zone-bakery_food-z_dough,contains,Dough preparation belongs to this factory,1.0
+zone-bakery_food-z_dough,overview-bakery_food,part of,Return to the factory-wide context,0.95
+zone-bakery_food-z_dough,meter-bakery_food-z_dough-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-bakery_food-z_dough-mt1,zone-bakery_food-z_dough,observes,Open the operating context for this measurement point,1.0
+overview-bakery_food,zone-bakery_food-z_cold,contains,Cold store belongs to this factory,1.0
+zone-bakery_food-z_cold,overview-bakery_food,part of,Return to the factory-wide context,0.95
+zone-bakery_food-z_cold,meter-bakery_food-z_cold-mt3,measured by,MT3 provides this zone's evidence,1.0
+meter-bakery_food-z_cold-mt3,zone-bakery_food-z_cold,observes,Open the operating context for this measurement point,1.0
+overview-bakery_food,zone-bakery_food-z_pack,contains,Packing belongs to this factory,1.0
+zone-bakery_food-z_pack,overview-bakery_food,part of,Return to the factory-wide context,0.95
+zone-bakery_food-z_pack,meter-bakery_food-z_pack-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-bakery_food-z_pack-mt1,zone-bakery_food-z_pack,observes,Open the operating context for this measurement point,1.0
+overview-bakery_food,zone-bakery_food-z_util,contains,Utilities belongs to this factory,1.0
+zone-bakery_food-z_util,overview-bakery_food,part of,Return to the factory-wide context,0.95
+zone-bakery_food-z_util,meter-bakery_food-z_util-mt1,measured by,MT1 provides this zone's evidence,1.0
+meter-bakery_food-z_util-mt1,zone-bakery_food-z_util,observes,Open the operating context for this measurement point,1.0
+zone-textile_reference-z_air,incident-01-compressor-running-after-saturday-shift,has incident,Observed inside this zone,0.92
+incident-01-compressor-running-after-saturday-shift,zone-textile_reference-z_air,occurred in,Review the zone operating context,1.0
+incident-01-compressor-running-after-saturday-shift,meter-textile_reference-z_air-mt3,supported by,Inspect the measurement point behind this finding,0.96
+meter-textile_reference-z_air-mt3,incident-01-compressor-running-after-saturday-shift,detected,An anomaly supported by this meter,0.88
+zone-textile_reference-z_air,incident-02-compressed-air-leak-growth,has incident,Observed inside this zone,0.92
+incident-02-compressed-air-leak-growth,zone-textile_reference-z_air,occurred in,Review the zone operating context,1.0
+incident-02-compressed-air-leak-growth,meter-textile_reference-z_air-mt3,supported by,Inspect the measurement point behind this finding,0.96
+meter-textile_reference-z_air-mt3,incident-02-compressed-air-leak-growth,detected,An anomaly supported by this meter,0.88
+zone-textile_reference-z_prod,incident-03-line-1-motor-efficiency-drift,has incident,Observed inside this zone,0.92
+incident-03-line-1-motor-efficiency-drift,zone-textile_reference-z_prod,occurred in,Review the zone operating context,1.0
+incident-03-line-1-motor-efficiency-drift,meter-textile_reference-z_prod-mt2,supported by,Inspect the measurement point behind this finding,0.96
+meter-textile_reference-z_prod-mt2,incident-03-line-1-motor-efficiency-drift,detected,An anomaly supported by this meter,0.88
+zone-cold_storage-z_plant,incident-04-screw-compressor-efficiency-loss,has incident,Observed inside this zone,0.92
+incident-04-screw-compressor-efficiency-loss,zone-cold_storage-z_plant,occurred in,Review the zone operating context,1.0
+incident-04-screw-compressor-efficiency-loss,meter-cold_storage-z_plant-mt2,supported by,Inspect the measurement point behind this finding,0.96
+meter-cold_storage-z_plant-mt2,incident-04-screw-compressor-efficiency-loss,detected,An anomaly supported by this meter,0.88
+zone-cold_storage-z_dock,incident-05-loading-door-thermal-ingress,has incident,Observed inside this zone,0.92
+incident-05-loading-door-thermal-ingress,zone-cold_storage-z_dock,occurred in,Review the zone operating context,1.0
+incident-05-loading-door-thermal-ingress,meter-cold_storage-z_dock-mt5,supported by,Inspect the measurement point behind this finding,0.96
+meter-cold_storage-z_dock-mt5,incident-05-loading-door-thermal-ingress,detected,An anomaly supported by this meter,0.88
+zone-plastics_moulding-z_aux,incident-06-chiller-short-cycling,has incident,Observed inside this zone,0.92
+incident-06-chiller-short-cycling,zone-plastics_moulding-z_aux,occurred in,Review the zone operating context,1.0
+incident-06-chiller-short-cycling,meter-plastics_moulding-z_aux-mt3,supported by,Inspect the measurement point behind this finding,0.96
+meter-plastics_moulding-z_aux-mt3,incident-06-chiller-short-cycling,detected,An anomaly supported by this meter,0.88
+zone-plastics_moulding-z_mould,incident-07-barrel-heater-left-energised,has incident,Observed inside this zone,0.92
+incident-07-barrel-heater-left-energised,zone-plastics_moulding-z_mould,occurred in,Review the zone operating context,1.0
+incident-07-barrel-heater-left-energised,meter-plastics_moulding-z_mould-mt2,supported by,Inspect the measurement point behind this finding,0.96
+meter-plastics_moulding-z_mould-mt2,incident-07-barrel-heater-left-energised,detected,An anomaly supported by this meter,0.88
+zone-metal_workshop-z_fab,incident-08-unexpected-welding-peak,has incident,Observed inside this zone,0.92
+incident-08-unexpected-welding-peak,zone-metal_workshop-z_fab,occurred in,Review the zone operating context,1.0
+incident-08-unexpected-welding-peak,meter-metal_workshop-z_fab-mt1,supported by,Inspect the measurement point behind this finding,0.96
+meter-metal_workshop-z_fab-mt1,incident-08-unexpected-welding-peak,detected,An anomaly supported by this meter,0.88
+zone-metal_workshop-z_shop,incident-09-lathe-idle-load-pattern,has incident,Observed inside this zone,0.92
+incident-09-lathe-idle-load-pattern,zone-metal_workshop-z_shop,occurred in,Review the zone operating context,1.0
+incident-09-lathe-idle-load-pattern,meter-metal_workshop-z_shop-mt1,supported by,Inspect the measurement point behind this finding,0.96
+meter-metal_workshop-z_shop-mt1,incident-09-lathe-idle-load-pattern,detected,An anomaly supported by this meter,0.88
+zone-bakery_food-z_bake,incident-10-oven-preheat-started-early,has incident,Observed inside this zone,0.92
+incident-10-oven-preheat-started-early,zone-bakery_food-z_bake,occurred in,Review the zone operating context,1.0
+incident-10-oven-preheat-started-early,meter-bakery_food-z_bake-mt2,supported by,Inspect the measurement point behind this finding,0.96
+meter-bakery_food-z_bake-mt2,incident-10-oven-preheat-started-early,detected,An anomaly supported by this meter,0.88
+zone-bakery_food-z_cold,incident-11-cold-room-seal-degradation,has incident,Observed inside this zone,0.92
+incident-11-cold-room-seal-degradation,zone-bakery_food-z_cold,occurred in,Review the zone operating context,1.0
+incident-11-cold-room-seal-degradation,meter-bakery_food-z_cold-mt3,supported by,Inspect the measurement point behind this finding,0.96
+meter-bakery_food-z_cold-mt3,incident-11-cold-room-seal-degradation,detected,An anomaly supported by this meter,0.88
+incident-01-compressor-running-after-saturday-shift,pb-idle,diagnosed with,"Shared topic: overnight, waste",0.8800000000000001
+pb-idle,incident-01-compressor-running-after-saturday-shift,used for,Example incident for this procedure,0.8200000000000001
+incident-01-compressor-running-after-saturday-shift,pb-compressor,diagnosed with,Shared topic: compressor,0.78
+pb-compressor,incident-01-compressor-running-after-saturday-shift,used for,Example incident for this procedure,0.72
+incident-02-compressed-air-leak-growth,pb-compressor,diagnosed with,Shared topic: compressed-air,0.78
+pb-compressor,incident-02-compressed-air-leak-growth,used for,Example incident for this procedure,0.72
+incident-03-line-1-motor-efficiency-drift,pb-pf,diagnosed with,"Shared topic: comparison, motor, power-factor",0.9800000000000001
+pb-pf,incident-03-line-1-motor-efficiency-drift,used for,Example incident for this procedure,0.92
+incident-04-screw-compressor-efficiency-loss,pb-compressor,diagnosed with,"Shared topic: compressor, efficiency",0.8800000000000001
+pb-compressor,incident-04-screw-compressor-efficiency-loss,used for,Example incident for this procedure,0.8200000000000001
+incident-05-loading-door-thermal-ingress,pb-thermal,diagnosed with,"Shared topic: door, thermal",0.8800000000000001
+pb-thermal,incident-05-loading-door-thermal-ingress,used for,Example incident for this procedure,0.8200000000000001
+incident-06-chiller-short-cycling,pb-cycle,diagnosed with,"Shared topic: chiller, maintenance, short-cycling",0.9800000000000001
+pb-cycle,incident-06-chiller-short-cycling,used for,Example incident for this procedure,0.92
+incident-07-barrel-heater-left-energised,pb-idle,diagnosed with,"Shared topic: idle-load, schedule",0.8800000000000001
+pb-idle,incident-07-barrel-heater-left-energised,used for,Example incident for this procedure,0.8200000000000001
+incident-08-unexpected-welding-peak,pb-peak,diagnosed with,"Shared topic: demand, peak, welding",0.9800000000000001
+pb-peak,incident-08-unexpected-welding-peak,used for,Example incident for this procedure,0.92
+incident-09-lathe-idle-load-pattern,pb-idle,diagnosed with,"Shared topic: idle-load, waste",0.8800000000000001
+pb-idle,incident-09-lathe-idle-load-pattern,used for,Example incident for this procedure,0.8200000000000001
+incident-10-oven-preheat-started-early,pb-thermal,diagnosed with,"Shared topic: oven, thermal",0.8800000000000001
+pb-thermal,incident-10-oven-preheat-started-early,used for,Example incident for this procedure,0.8200000000000001
+incident-10-oven-preheat-started-early,pb-idle,diagnosed with,Shared topic: schedule,0.78
+pb-idle,incident-10-oven-preheat-started-early,used for,Example incident for this procedure,0.72
+incident-11-cold-room-seal-degradation,pb-thermal,diagnosed with,Shared topic: cold-room,0.78
+pb-thermal,incident-11-cold-room-seal-degradation,used for,Example incident for this procedure,0.72
+incident-11-cold-room-seal-degradation,pb-compressor,diagnosed with,Shared topic: efficiency,0.78
+pb-compressor,incident-11-cold-room-seal-degradation,used for,Example incident for this procedure,0.72
+incident-01-compressor-running-after-saturday-shift,incident-04-screw-compressor-efficiency-loss,similar to,Similar signal: compressor,0.72
+incident-04-screw-compressor-efficiency-loss,incident-01-compressor-running-after-saturday-shift,similar to,Similar signal: compressor,0.72
+incident-01-compressor-running-after-saturday-shift,incident-09-lathe-idle-load-pattern,similar to,Similar signal: waste,0.72
+incident-09-lathe-idle-load-pattern,incident-01-compressor-running-after-saturday-shift,similar to,Similar signal: waste,0.72
+incident-02-compressed-air-leak-growth,incident-11-cold-room-seal-degradation,similar to,Similar signal: trend,0.72
+incident-11-cold-room-seal-degradation,incident-02-compressed-air-leak-growth,similar to,Similar signal: trend,0.72
+incident-04-screw-compressor-efficiency-loss,incident-11-cold-room-seal-degradation,similar to,Similar signal: efficiency,0.72
+incident-11-cold-room-seal-degradation,incident-04-screw-compressor-efficiency-loss,similar to,Similar signal: efficiency,0.72
+incident-05-loading-door-thermal-ingress,incident-10-oven-preheat-started-early,similar to,Similar signal: thermal,0.72
+incident-10-oven-preheat-started-early,incident-05-loading-door-thermal-ingress,similar to,Similar signal: thermal,0.72
+incident-07-barrel-heater-left-energised,incident-09-lathe-idle-load-pattern,similar to,Similar signal: idle-load,0.72
+incident-09-lathe-idle-load-pattern,incident-07-barrel-heater-left-energised,similar to,Similar signal: idle-load,0.72
+incident-07-barrel-heater-left-energised,incident-10-oven-preheat-started-early,similar to,Similar signal: schedule,0.72
+incident-10-oven-preheat-started-early,incident-07-barrel-heater-left-energised,similar to,Similar signal: schedule,0.72
